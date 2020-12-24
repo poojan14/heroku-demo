@@ -72,7 +72,7 @@ def index():
         return redirect(url_for("prediction"))
 
 
-    return render_template('home.html', form=form)
+    return render_template('home1.html', form=form)
 
 
 @app.route('/prediction')
