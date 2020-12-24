@@ -1,4 +1,18 @@
-<h1>Thank You. Here is the Information You Gave:</h1>
+<html>
+<head>
+<title>Thank You. Here is the Information You Gave:</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+
+	</head>
+<!-- #6798B3 -->
+<body style="background-color:#D9E4EA;">
+<div style="margin-top: 50px; margin-bottom: 50px; font-size: 50px;text-transform: uppercase;">
+
 <ul>
 	<li>Sepal Length: {{session['sep_len']}}</li>
 	<li>Sepal Width:  {{session['sep_wid']}}</li>
@@ -7,7 +21,41 @@
 </ul>
 <h2>Your Predicted Flower Class is: {{results}}</h2>
 <h3>Just for information</h3>
-<p>For setosa: SL-5.1 SW-3 PL-1.4 PW-0.2  </p>
-<p>For versicolor: SL-6.4 SW-3.5 PL-4.5 PW-1.2  </p>
-<p>For virginicia: SL-5.9 SW-3.0 PL-5.0 PW-1.8  </p>
-<footer>Made by Poojan Shah</footer>
+<table style="width:100%">
+  <tr>
+    <th>Flower Type</th>
+    <th>Sepal Length</th> 
+    <th>Sepal Width</th>
+  <th>Petal Length</th> 
+    <th>Petal Width</th>
+
+  </tr>
+  <tr>
+  <td>setosa</td>
+  <td>5.1</td>
+    <td>3.0</td>
+    <td>1.4</td>
+    <td>0.2</td>
+  </tr>
+  <tr>
+    <td>versicolor</td>
+  <td>6.4</td>
+    <td>3.5</td>
+    <td>4.5</td>
+    <td>1.2</td>
+    </tr>
+  <tr>
+    <td>virginicia</td>
+  <td>5.9</td>
+    <td>3.0</td>
+    <td>5.0</td>
+    <td>1.8</td>
+    </tr>
+</table>
+
+<footer style="margin-top: 50px;">
+	<CENTER>Made by Poojan Shah</CENTER>
+</footer>
+
+</body>
+</html>
